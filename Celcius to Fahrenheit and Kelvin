@@ -1,0 +1,13 @@
+//Celcius to Fahrenheit and Kelvin program
+
+double fahrenheit;
+double kelvin;
+
+Console.Write("Enter celcius: ");
+double celcius = double.Parse(Console.ReadLine());
+
+
+fahrenheit = (celcius * 9 / 5) + 32;
+kelvin = celcius + 273.15;
+
+Console.WriteLine($"{celcius:F2} is {fahrenheit:F2} fahrenheit and {kelvin:F2} kelvin.");
