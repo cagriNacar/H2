@@ -1,0 +1,27 @@
+// Student grades calculator program
+
+int g1, g2, g3;
+
+Console.Write("Enter first student grade: ");
+g1 = int.Parse(Console.ReadLine());
+Console.Write("Enter second student grade: ");
+g2 = int.Parse(Console.ReadLine());
+Console.Write("Enter third student grade: ");
+g3 = int.Parse(Console.ReadLine());
+
+int sum = g1 + g2 + g3;
+
+Console.WriteLine($"Sum of Grades {sum}");
+
+double ave = (double)sum / 3;
+
+Console.WriteLine($"Average of Grades {ave:F2}");
+
+if ( ave >= 60)
+{
+    Console.WriteLine($"Average is greater than 60.");
+}
+else
+{
+    Console.WriteLine($"Average is fewer than 60.");
+}
