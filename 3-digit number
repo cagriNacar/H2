@@ -1,0 +1,16 @@
+Console.Write("Enter 3-digit number: ");
+
+
+
+if (!int.TryParse(Console.ReadLine(), out int num1) || num1 < 100 || num1 > 999)
+{
+    Console.WriteLine("Invalid input");
+}
+
+int first_digit = num1 / 100;
+
+int middle_digit = (num1 / 10) % 10;
+
+int last_digit = num1 % 10;
+
+Console.WriteLine($"First digit is {first_digit}, middle digit is {middle_digit} and last digit is {last_digit}");
